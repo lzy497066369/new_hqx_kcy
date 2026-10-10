@@ -1,0 +1,123 @@
+{
+  "title": "System Management",
+  "operationLog": {
+    "title": "Operation Log",
+    "description": "Track effective system actions for audit and troubleshooting.",
+    "id": "Log ID",
+    "module": "Module",
+    "action": "Action",
+    "bizId": "Business ID",
+    "requestPath": "Request Path",
+    "userName": "Operator",
+    "realName": "Real Name",
+    "success": "Result",
+    "successLabel": "Success",
+    "failLabel": "Failed",
+    "cost": "Cost",
+    "operation": "Operation",
+    "createTime": "Creation Time",
+    "ip": "IP",
+    "method": "Method",
+    "userAgent": "User-Agent",
+    "errorMessage": "Error Message",
+    "paramsText": "Request Params",
+    "resultText": "Response"
+  },
+  "user": {
+    "title": "User Management",
+    "list": "User List",
+    "name": "User",
+    "userName": "User Name",
+    "username": "Account",
+    "password": "Password",
+    "passwordPlaceholder": "Please enter a password, leave blank when editing",
+    "id": "User ID",
+    "dept": "Department",
+    "homePath": "Home Path",
+    "role": "Role",
+    "status": "Status",
+    "remark": "Remark",
+    "createTime": "Creation Time",
+    "operation": "Operation",
+    "placeholder": "Search Department..."
+  },
+  "dept": {
+    "name": "Department",
+    "title": "Department Management",
+    "deptName": "Department Name",
+    "sortNum": "Sort",
+    "status": "Status",
+    "createTime": "Create Time",
+    "remark": "Remark",
+    "operation": "Operation",
+    "parentDept": "Parent Department",
+    "list": "Department List"
+  },
+  "menu": {
+    "title": "Menu Management",
+    "list": "Menu List",
+    "parent": "Parent Menu",
+    "menuTitle": "Title",
+    "menuName": "Menu Name",
+    "name": "Menu",
+    "orderNum": "Sort",
+    "type": "Type",
+    "typeCatalog": "Catalog",
+    "typeMenu": "Menu",
+    "typeButton": "Button",
+    "typeLink": "Link",
+    "typeEmbedded": "Embedded",
+    "icon": "Icon",
+    "activeIcon": "Active Icon",
+    "activePath": "Active Path",
+    "path": "Route Path",
+    "redirect": "Redirect",
+    "component": "Component",
+    "status": "Status",
+    "authCode": "Auth Code",
+    "badge": "Badge",
+    "operation": "Operation",
+    "linkSrc": "Link Address",
+    "affixTab": "Affix In Tabs",
+    "keepAlive": "Keep Alive",
+    "hideInMenu": "Hide In Menu",
+    "hideInTab": "Hide In Tabbar",
+    "hideChildrenInMenu": "Hide Children In Menu",
+    "hideInBreadcrumb": "Hide In Breadcrumb",
+    "advancedSettings": "Other Settings",
+    "activePathMustExist": "The path could not find a valid menu",
+    "activePathHelp": "Specify the active menu path when the route is not shown in navigation.",
+    "badgeType": {
+      "title": "Badge Type",
+      "dot": "Dot",
+      "normal": "Text",
+      "none": "None"
+    },
+    "badgeVariants": "Badge Style"
+  },
+  "role": {
+    "title": "Role Management",
+    "list": "Role List",
+    "name": "Role",
+    "roleName": "Role Name",
+    "id": "Role ID",
+    "status": "Status",
+    "remark": "Remark",
+    "createTime": "Creation Time",
+    "operation": "Operation",
+    "permissions": "Permissions",
+    "setPermissions": "Permissions"
+  },
+  "enterprise": {
+    "title": "Enterprise Management",
+    "profile": {
+      "name": "Enterprise Profile"
+    },
+    "owner": {
+      "name": "Enterprise Owner"
+    },
+    "user": {
+      "name": "Enterprise User"
+    }
+  }
+}

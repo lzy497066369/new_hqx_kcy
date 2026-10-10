@@ -1,0 +1,38 @@
+{
+  "name": "iam-frontend",
+  "version": "0.1.0",
+  "private": true,
+  "description": "Unified IAM and SSO administration frontend",
+  "type": "module",
+  "scripts": {
+    "build": "node ../../vue-admin/node_modules/vite/bin/vite.js build --mode production",
+    "dev": "node ../../vue-admin/node_modules/vite/bin/vite.js --mode development",
+    "preview": "node ../../vue-admin/node_modules/vite/bin/vite.js preview",
+    "typecheck": "node ../../vue-admin/node_modules/vue-tsc/bin/vue-tsc.js --noEmit --skipLibCheck"
+  },
+  "imports": {
+    "#/*": "./src/*"
+  },
+  "dependencies": {
+    "@vben/access": "workspace:*",
+    "@vben/common-ui": "workspace:*",
+    "@vben/constants": "workspace:*",
+    "@vben/hooks": "workspace:*",
+    "@vben/icons": "workspace:*",
+    "@vben/layouts": "workspace:*",
+    "@vben/locales": "workspace:*",
+    "@vben/plugins": "workspace:*",
+    "@vben/preferences": "workspace:*",
+    "@vben/request": "workspace:*",
+    "@vben/stores": "workspace:*",
+    "@vben/styles": "workspace:*",
+    "@vben/types": "workspace:*",
+    "@vben/utils": "workspace:*",
+    "@vueuse/core": "catalog:",
+    "antdv-next": "catalog:",
+    "dayjs": "catalog:",
+    "pinia": "catalog:",
+    "vue": "catalog:",
+    "vue-router": "catalog:"
+  }
+}

@@ -1,0 +1,123 @@
+{
+  "title": "系统管理",
+  "operationLog": {
+    "title": "操作日志",
+    "description": "记录系统中的有效操作，便于审计和追踪。",
+    "id": "日志ID",
+    "module": "模块",
+    "action": "动作",
+    "bizId": "业务ID",
+    "requestPath": "请求路径",
+    "userName": "操作人",
+    "realName": "真实姓名",
+    "success": "结果",
+    "successLabel": "成功",
+    "failLabel": "失败",
+    "cost": "耗时",
+    "operation": "操作",
+    "createTime": "创建时间",
+    "ip": "IP",
+    "method": "请求方法",
+    "userAgent": "User-Agent",
+    "errorMessage": "错误信息",
+    "paramsText": "请求参数",
+    "resultText": "返回结果"
+  },
+  "user": {
+    "title": "用户管理",
+    "list": "用户列表",
+    "name": "用户",
+    "userName": "用户名称",
+    "username": "账号",
+    "password": "密码",
+    "passwordPlaceholder": "请输入密码，编辑时可留空",
+    "id": "用户ID",
+    "dept": "部门",
+    "homePath": "首页路径",
+    "role": "角色",
+    "status": "状态",
+    "remark": "备注",
+    "createTime": "创建时间",
+    "operation": "操作",
+    "placeholder": "搜索部门..."
+  },
+  "dept": {
+    "list": "部门列表",
+    "createTime": "创建时间",
+    "deptName": "部门名称",
+    "name": "部门",
+    "sortNum": "排序",
+    "operation": "操作",
+    "parentDept": "上级部门",
+    "remark": "备注",
+    "status": "状态",
+    "title": "部门管理"
+  },
+  "menu": {
+    "title": "菜单管理",
+    "list": "菜单列表",
+    "parent": "上级菜单",
+    "menuTitle": "标题",
+    "menuName": "菜单名称",
+    "name": "菜单",
+    "orderNum": "排序",
+    "type": "类型",
+    "typeCatalog": "目录",
+    "typeMenu": "菜单",
+    "typeButton": "按钮",
+    "typeLink": "外链",
+    "typeEmbedded": "内嵌",
+    "icon": "图标",
+    "activeIcon": "激活图标",
+    "activePath": "激活路径",
+    "path": "路由地址",
+    "redirect": "重定向",
+    "component": "页面组件",
+    "status": "状态",
+    "authCode": "权限标识",
+    "badge": "徽章内容",
+    "operation": "操作",
+    "linkSrc": "链接地址",
+    "affixTab": "固定在标签页",
+    "keepAlive": "缓存标签页",
+    "hideInMenu": "隐藏菜单",
+    "hideInTab": "在标签栏中隐藏",
+    "hideChildrenInMenu": "隐藏子菜单",
+    "hideInBreadcrumb": "在面包屑中隐藏",
+    "advancedSettings": "其它设置",
+    "activePathMustExist": "该路径未找到有效菜单",
+    "activePathHelp": "跳转到当前路由时，需要指定激活的菜单路径。",
+    "badgeType": {
+      "title": "徽标类型",
+      "dot": "点",
+      "normal": "文字",
+      "none": "无"
+    },
+    "badgeVariants": "徽标样式"
+  },
+  "role": {
+    "title": "角色管理",
+    "list": "角色列表",
+    "name": "角色",
+    "roleName": "角色名称",
+    "id": "角色ID",
+    "status": "状态",
+    "remark": "备注",
+    "createTime": "创建时间",
+    "operation": "操作",
+    "permissions": "权限",
+    "setPermissions": "授权"
+  },
+  "enterprise": {
+    "title": "企业管理",
+    "profile": {
+      "name": "企业资料"
+    },
+    "owner": {
+      "name": "企业负责人"
+    },
+    "user": {
+      "name": "企业用户"
+    }
+  }
+}

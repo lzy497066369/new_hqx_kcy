@@ -1,0 +1,13 @@
+*
+!docker/
+!docker/frontend.Dockerfile
+!vue-admin/
+!vue-admin/**
+vue-admin/node_modules
+vue-admin/**/node_modules
+vue-admin/dist
+vue-admin/**/dist
+!iam/
+!iam/packages/
+!iam/packages/iam-spa-sdk/
+!iam/packages/iam-spa-sdk/**

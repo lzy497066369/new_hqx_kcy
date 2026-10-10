@@ -1,0 +1,37 @@
+{
+  "auth": {
+    "clientPlatform": "Enterprise Filing Workbench",
+    "basicSetting": "Basic Settings",
+    "confirmPassword": "Confirm Password",
+    "confirmPasswordPlaceholder": "Please enter the new password again",
+    "accountPassword": "Account Password",
+    "login": "Login",
+    "loginDesc": "A unified login entry for business data, workflow management, and system permissions.",
+    "notificationSetting": "New Message Alerts",
+    "newPassword": "New Password",
+    "newPasswordPlaceholder": "Please enter a new password",
+    "oldPassword": "Old Password",
+    "oldPasswordPlaceholder": "Please enter the old password",
+    "password": "Password",
+    "passwordMismatch": "The two passwords do not match",
+    "passwordPlaceholder": "Please enter your password",
+    "passwordSetting": "Change Password",
+    "passwordUpdateSuccess": "Password updated successfully",
+    "profile": "Profile",
+    "personalIntroduction": "Introduction",
+    "requestFailed": "Request failed, please try again later",
+    "securitySetting": "Security Settings",
+    "securityEmail": "Backup Email",
+    "securityMfa": "MFA Device",
+    "securityPhone": "Security Phone",
+    "securityQuestion": "Security Question",
+    "tokenExpiredWarn": "Access token or refresh token is invalid or expired, re-authenticated",
+    "username": "Account",
+    "usernamePlaceholder": "Please enter your account"
+  },
+  "dashboard": {
+    "title": "Dashboard",
+    "analytics": "Analytics",
+    "workspace": "Workbench"
+  }
+}

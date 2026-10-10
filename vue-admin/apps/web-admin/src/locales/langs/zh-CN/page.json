@@ -1,0 +1,43 @@
+{
+  "auth": {
+    "adminPlatform": "管理平台",
+    "basicSetting": "基本设置",
+    "confirmPassword": "确认密码",
+    "confirmPasswordPlaceholder": "请再次输入新密码",
+    "accountPassword": "账户密码",
+    "login": "登录",
+    "loginDesc": "统一登录入口，支持账号、手机号或邮箱登录，聚合业务数据、流程管理与系统权限能力。",
+    "loginAccount": "账号/手机号/邮箱",
+    "loginAccountPlaceholder": "请输入账号、手机号或邮箱",
+    "notificationSetting": "新消息提醒",
+    "newPassword": "新密码",
+    "newPasswordPlaceholder": "请输入新密码",
+    "oldPassword": "旧密码",
+    "oldPasswordPlaceholder": "请输入旧密码",
+    "password": "密码",
+    "passwordMismatch": "两次输入的密码不一致",
+    "passwordPlaceholder": "请输入密码",
+    "passwordSetting": "修改密码",
+    "passwordUpdateSuccess": "密码修改成功",
+    "profile": "个人中心",
+    "personalIntroduction": "个人简介",
+    "requestFailed": "请求失败，请稍后重试",
+    "securitySetting": "安全设置",
+    "securityEmail": "邮箱",
+    "securityMfa": "MFA 设备",
+    "securityPhone": "密保手机",
+    "securityPhonePlaceholder": "请输入手机号",
+    "securityEmailPlaceholder": "请输入邮箱",
+    "securityQuestion": "密保问题",
+    "updateSecurityInfo": "更新安全信息",
+    "tokenExpiredWarn": "访问令牌或刷新令牌无效，已重新登录",
+    "username": "账号",
+    "usernamePlaceholder": "请输入账号"
+  },
+  "dashboard": {
+    "title": "概览",
+    "analytics": "分析页",
+    "aiAnalysis": "AI 分析",
+    "workspace": "工作中心"
+  }
+}

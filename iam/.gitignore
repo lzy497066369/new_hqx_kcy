@@ -1,0 +1,6 @@
+iam_backend/node_modules/
+iam_backend/dist/
+iam_frontend/node_modules/
+iam_frontend/dist/
+packages/*/dist/
+packages/*/node_modules/

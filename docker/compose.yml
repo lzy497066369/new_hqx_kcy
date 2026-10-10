@@ -1,0 +1,108 @@
+name: new_kjqb
+
+services:
+  mysql:
+    image: mysql:5.7
+    restart: unless-stopped
+    command: --default-authentication-plugin=mysql_native_password
+    environment:
+      MYSQL_DATABASE: ${DB_DATABASE:-hqx_kjqb}
+      MYSQL_USER: ${DB_USERNAME:-hqx_kjqb}
+      MYSQL_PASSWORD: ${DB_PASSWORD:-hqx_kjqb_dev_password}
+      MYSQL_ROOT_PASSWORD: ${MYSQL_ROOT_PASSWORD:-root_dev_password}
+      TZ: Asia/Shanghai
+    ports:
+      - 127.0.0.1:8203:3306
+    volumes:
+      - mysql-data:/var/lib/mysql
+      - ../backend/sql/schema.mysql56.sql:/docker-entrypoint-initdb.d/001-schema.sql:ro
+    healthcheck:
+      test: [CMD-SHELL, 'mysqladmin ping -h localhost -u root -p"$${MYSQL_ROOT_PASSWORD}" --silent']
+      interval: 10s
+      timeout: 5s
+      retries: 12
+
+  redis:
+    image: redis:7.4-alpine
+    restart: unless-stopped
+    command: ['redis-server', '--appendonly', 'yes', '--requirepass', '${REDIS_PASSWORD:-redis_dev_password}']
+    environment:
+      REDIS_PASSWORD: ${REDIS_PASSWORD:-redis_dev_password}
+      TZ: Asia/Shanghai
+    ports:
+      - 127.0.0.1:8204:6379
+    volumes:
+      - redis-data:/data
+    healthcheck:
+      test: [CMD-SHELL, 'redis-cli --no-auth-warning -a "$${REDIS_PASSWORD}" ping | grep PONG']
+      interval: 10s
+      timeout: 5s
+      retries: 12
+
+  backend:
+    build:
+      context: ../backend
+      dockerfile: ../docker/backend.Dockerfile
+    restart: unless-stopped
+    environment:
+      NODE_ENV: production
+      PORT: 3000
+      CORS_ORIGINS: http://localhost:5998
+      DB_HOST: mysql
+      DB_PORT: 3306
+      DB_USERNAME: ${DB_USERNAME:-hqx_kjqb}
+      DB_PASSWORD: ${DB_PASSWORD:-hqx_kjqb_dev_password}
+      DB_DATABASE: ${DB_DATABASE:-hqx_kjqb}
+      DB_SYNCHRONIZE: 'false'
+      REDIS_ENABLED: 'true'
+      REDIS_HOST: redis
+      REDIS_PORT: 6379
+      REDIS_PASSWORD: ${REDIS_PASSWORD:-redis_dev_password}
+      REDIS_DATABASE: 0
+      REDIS_KEY_PREFIX: 'kjqb:auth:'
+      AUTH_SESSION_STORE: redis
+      AUTH_CLIENT_ONLY: 'true'
+      TIANYANCHA_BASE_URL: ${TIANYANCHA_BASE_URL:-https://open.api.tianyancha.com/services/open}
+      TIANYANCHA_TOKEN: ${TIANYANCHA_TOKEN:-}
+      CRM_SYNC_TOKEN: ${CRM_SYNC_TOKEN:-}
+      CRM_INTEGRATION_ENCRYPTION_KEY: ${CRM_INTEGRATION_ENCRYPTION_KEY:-}
+      AI_PROVIDER: ${AI_PROVIDER:-psydo}
+      AI_API_KEY: ${AI_API_KEY:-}
+      AI_BASE_URL: ${AI_BASE_URL:-https://api.psydo.top/v1}
+      AI_MODEL: ${AI_MODEL:-gpt-6-astra}
+      AI_MODELS: ${AI_MODELS:-gpt-6-astra,gpt-6-sol,gpt-5.6-sol}
+      AI_VISION_MODEL: ${AI_VISION_MODEL:-gpt-6-astra}
+    ports:
+      - 127.0.0.1:8202:3000
+    volumes:
+      - backend-uploads:/app/uploads
+    depends_on:
+      mysql:
+        condition: service_healthy
+      redis:
+        condition: service_healthy
+    healthcheck:
+      test: [CMD, node, -e, "fetch('http://127.0.0.1:3000/health').then(r => process.exit(r.ok ? 0 : 1)).catch(() => process.exit(1))"]
+      interval: 10s
+      timeout: 5s
+      retries: 12
+
+  web-client:
+    build:
+      context: ..
+      dockerfile: docker/frontend.Dockerfile
+      args:
+        APP_NAME: web-client
+        APP_PORTAL: client
+        VITE_GLOB_API_URL: /api
+    restart: unless-stopped
+    ports:
+      - 127.0.0.1:8201:80
+    depends_on:
+      backend:
+        condition: service_healthy
+
+volumes:
+  mysql-data:
+  redis-data:
+  backend-uploads:

@@ -1,0 +1,42 @@
+# ============ 依赖目录（部署时重新安装，不进仓库） ============
+node_modules/
+**/node_modules/
+
+# ============ 构建产物 ============
+dist/
+**/dist/
+build/
+*.tsbuildinfo
+
+# ============ 环境变量与密钥（绝不进仓库） ============
+.env
+*.env
+*.pem
+*.key
+miyao.js
+
+# ============ 本地临时与输出文件 ============
+tmp/
+output/
+*.log
+.DS_Store
+
+# ============ 编辑器配置 ============
+.vscode/
+.idea/
+
+# Public repository: keep runtime data and local tooling out of Git.
+/backend/uploads/
+/backend/storage/
+/backend/sql/import-project-teachers-chengdu.sql
+/.codex-tmp/
+/.playwright-cli/
+/.pnpm-store/
+/.claude/
+/.superpowers/
+/.tmp_*
+/.tmp-*
+*.zip
+.env.*
+!.env.example
+!.env.*.example

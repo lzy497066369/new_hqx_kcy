@@ -1,0 +1,14 @@
+{
+  "version": "2026-10-01",
+  "regions": [
+    { "code": "beijing", "name": "北京", "level": "province", "sortNum": 1 },
+    { "code": "sichuan", "name": "四川", "level": "province", "sortNum": 2 },
+    { "code": "zhejiang", "name": "浙江", "level": "province", "sortNum": 3 },
+    { "code": "jiangsu", "name": "江苏", "level": "province", "sortNum": 4 },
+    { "code": "fujian", "name": "福建", "level": "province", "sortNum": 5 },
+    { "code": "henan", "name": "河南", "level": "province", "sortNum": 6 },
+    { "code": "anhui", "name": "安徽", "level": "province", "sortNum": 7 },
+    { "code": "yunnan", "name": "云南", "level": "province", "sortNum": 8 }
+  ],
+  "projects": []
+}

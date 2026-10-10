@@ -1,0 +1,46 @@
+- generic [ref=f4e4]:
+  - generic [ref=f4e5]:
+    - generic [ref=f4e6]:
+      - generic [ref=f4e7]:
+        - generic:
+          - button [ref=f4e8] [cursor=pointer]
+          - button [ref=f4e12] [cursor=pointer]
+          - button [ref=f4e14] [cursor=pointer]
+          - button [ref=f4e16] [cursor=pointer]
+          - button [ref=f4e18] [cursor=pointer]
+          - button [ref=f4e20] [cursor=pointer]
+          - button [ref=f4e22] [cursor=pointer]
+        - button [ref=f4e24] [cursor=pointer]
+      - button [ref=f4e31] [cursor=pointer]
+    - button [ref=f4e35] [cursor=pointer]
+    - button "light" [ref=f4e41] [cursor=pointer]
+  - generic [ref=f4e50]:
+    - img "统一身份与访问管理中心" [ref=f4e51]
+    - paragraph [ref=f4e52]: 统一身份与访问管理中心
+  - generic [ref=f4e56]:
+    - img "87667-SVG8" [ref=f4e57]
+    - generic [ref=f4e361]: 慧企星-科创云一站式企业服务网站
+    - generic [ref=f4e362]: 高效、专业的企业服务中心
+  - generic [ref=f4e363]:
+    - main [ref=f4e366]:
+      - generic [ref=f4e367]:
+        - generic [ref=f4e368]:
+          - generic [ref=f4e369]: IAM / SSO
+          - heading "统一登录" [level=1] [ref=f4e370]
+          - paragraph [ref=f4e371]: 使用统一账号继续访问已授权业务系统。
+        - generic [ref=f4e372]:
+          - generic [ref=f4e374]:
+            - generic "账号" [ref=f4e376]: "* 账号"
+            - textbox [ref=f4e380]: e2e_1784040468510_21047d_user
+          - generic [ref=f4e382]:
+            - generic "密码" [ref=f4e384]: "* 密码"
+            - generic [ref=f4e388]:
+              - textbox [ref=f4e389]: E2ePassw0rd!
+              - img "eye-invisible" [ref=f4e391] [cursor=pointer]
+          - button "继 续" [active] [ref=f4e395] [cursor=pointer]
+    - generic [ref=f4e398]:
+      - link "浙ICP备20029391号-2" [ref=f4e399] [cursor=pointer]:
+        - /url: https://beian.miit.gov.cn/
+      - text: Copyright © 2024
+      - link "慧企星-科创云" [ref=f4e400] [cursor=pointer]:
+        - /url: javascript:void(0)

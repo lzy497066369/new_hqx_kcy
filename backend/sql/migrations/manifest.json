@@ -1,0 +1,254 @@
+{
+  "baseline": {
+    "file": "schema.mysql56.sql",
+    "id": "baseline_mysql56_20260704",
+    "purpose": "仅新环境初始化使用；不要在已有库重复执行。"
+  },
+  "migrations": [
+    {
+      "id": "20260704_01_client_enterprise_profile_module_tables",
+      "file": "client-enterprise-profile-module-tables.sql",
+      "purpose": "企业资料扩展记录表"
+    },
+    {
+      "id": "20260704_02_policy_file_declare_fields",
+      "file": "policy-file-declare-fields-patch.sql",
+      "purpose": "政策文件申报展示字段"
+    },
+    {
+      "id": "20260704_03_client_enterprise_profile_stat",
+      "file": "client-enterprise-profile-stat.sql",
+      "purpose": "企业资料完整度统计"
+    },
+    {
+      "id": "20260704_04_client_declaration",
+      "file": "client-declaration-p0.sql",
+      "purpose": "客户端申报主表"
+    },
+    {
+      "id": "20260704_05_project_material_readiness",
+      "file": "project-material-readiness-p1.sql",
+      "purpose": "申报材料要求与准备度"
+    },
+    {
+      "id": "20260704_06_project_material_requirement_menu",
+      "file": "project-material-requirement-menu-patch.sql",
+      "purpose": "材料要求后台权限与菜单"
+    },
+    {
+      "id": "20260704_07_client_project_detail_menu",
+      "file": "client-project-detail-menu-patch.sql",
+      "purpose": "客户端项目详情菜单"
+    },
+    {
+      "id": "20260705_01_client_employee_import",
+      "file": "client-employee-import-p1.sql",
+      "purpose": "员工导入字段与错误明细"
+    },
+    {
+      "id": "20260705_02_enterprise_finance_import",
+      "file": "enterprise-finance-import-p0.sql",
+      "purpose": "财税导入字段与错误明细"
+    },
+    {
+      "id": "20260705_03_gaoxin_book_draft",
+      "file": "gaoxin-book-draft-p2.sql",
+      "purpose": "高企申报书草稿"
+    },
+    {
+      "id": "20260706_01_client_enterprise_menu_replan",
+      "file": "client-enterprise-menu-replan-patch.sql",
+      "purpose": "客户端菜单重规划"
+    },
+    {
+      "id": "20260706_02_ai_module_tables",
+      "file": "ai-module-p0.sql",
+      "purpose": "AI 任务、结果与审计表"
+    },
+    {
+      "id": "20260706_03_ai_tables_utf8mb4",
+      "file": "ai-tables-utf8mb4-patch.sql",
+      "purpose": "AI 表字符集修正"
+    },
+    {
+      "id": "20260706_04_ai_admin_menu",
+      "file": "ai-admin-menu-p0.sql",
+      "purpose": "AI 审计后台权限与菜单"
+    },
+    {
+      "id": "20260706_05_ai_analysis_dashboard_menu",
+      "file": "ai-analysis-dashboard-menu-p0.sql",
+      "purpose": "AI 统计菜单"
+    },
+    {
+      "id": "20260706_06_ai_chat_test_menu",
+      "file": "ai-chat-test-menu-p0.sql",
+      "purpose": "AI 对话测试菜单"
+    },
+    {
+      "id": "20260706_07_ai_workspace_stats_menu_remove",
+      "file": "ai-workspace-stats-menu-remove-patch.sql",
+      "purpose": "清理旧 AI 统计菜单"
+    },
+    {
+      "id": "20260706_08_policy_collect",
+      "file": "policy-collect-p0.sql",
+      "purpose": "政策采集、同步、审核与通知"
+    },
+    {
+      "id": "20260706_09_policy_collect_category_scope",
+      "file": "policy-collect-category-region-scope-patch.sql",
+      "purpose": "政策采集分类与区域范围"
+    },
+    {
+      "id": "20260706_10_policy_collect_owner",
+      "file": "policy-collect-owner-patch.sql",
+      "purpose": "政策采集负责人字段"
+    },
+    {
+      "id": "20260707_01_client_property_ai_drafts",
+      "file": "client-property-ai-drafts-p1.sql",
+      "purpose": "企业资料 AI 草稿"
+    },
+    {
+      "id": "20260708_01_client_property_rd_ip_ps",
+      "file": "client-property-rd-ip-ps-p2-p5.sql",
+      "purpose": "知识产权、成果、RD、PS 关系字段"
+    },
+    {
+      "id": "20260713_01_declaration_scheme",
+      "file": "declaration-scheme-p0.sql",
+      "purpose": "地区化申报方案、资质前置条件、评分与流程快照"
+    },
+    {
+      "id": "20260714_01_declaration_configuration_menu",
+      "file": "declaration-configuration-menu-patch.sql",
+      "purpose": "申报配置与政策管理菜单重组"
+    },
+    {
+      "id": "20260714_02_enterprise_invoice_attachment",
+      "file": "enterprise-invoice-attachment-p1.sql",
+      "purpose": "企业发票附件字段与后台受保护预览"
+    },
+    {
+      "id": "20260714_03_enterprise_invoice_contract_relation",
+      "file": "enterprise-invoice-contract-relation-p1.sql",
+      "purpose": "企业发票关联合同字段"
+    },
+    {
+      "id": "20260715_01_declaration_preset",
+      "file": "declaration-preset-p1.sql",
+      "purpose": "统一政策项目预设与地区申报方案引用"
+    },
+    {
+      "id": "20260715_02_declaration_preset_defaults",
+      "file": "declaration-preset-defaults-p1.sql",
+      "purpose": "高企与科技型中小企业默认申报预设"
+    },
+    {
+      "id": "20260715_03_declaration_configuration_layout",
+      "file": "declaration-configuration-layout-p2.sql",
+      "purpose": "申报配置菜单按区域基础、统一政策项目和申报规则中心重新分层"
+    },
+    {
+      "id": "20260715_04_policy_project_mainline",
+      "file": "policy-project-mainline-p1.sql",
+      "purpose": "科技型中小企业、创新型中小企业、专精特新和高企主线统一政策项目"
+    },
+    {
+      "id": "20260715_05_policy_project_high_tech_replace",
+      "file": "policy-project-high-tech-replace-p1.sql",
+      "purpose": "保留历史关联并将旧高新技术企业项目标准化为国家高新技术企业"
+    },
+    {
+      "id": "20260715_06_declaration_enterprise_metric_preset",
+      "file": "declaration-enterprise-metric-preset-p1.sql",
+      "purpose": "企业指标预设及高企成立满365天默认样例"
+    },
+    {
+      "id": "20260721_01_declaration_region_matching",
+      "file": "declaration-region-matching-p1.sql",
+      "purpose": "申报地区持久化与地区方案命中修正"
+    },
+    {
+      "id": "20260722_01_crm_sync",
+      "file": "crm-sync-p0.sql",
+      "purpose": "CRM合同、执行单同步记录与自动申报"
+    },
+    {
+      "id": "20260723_01_crm_integration_v2",
+      "file": "crm-integration-v2-p1.sql",
+      "purpose": "CRM v2 签名验真、防重放、密钥轮换与异步入站任务"
+    },
+    {
+      "id": "20260729_01_project_teacher_enterprise_profile_create_permission",
+      "file": "project-teacher-enterprise-profile-create-permission-patch.sql",
+      "purpose": "项目老师新增企业资料权限"
+    },
+    {
+      "id": "20260729_02_project_teacher_enterprise_profile_edit_permission",
+      "file": "project-teacher-enterprise-profile-edit-permission-patch.sql",
+      "purpose": "项目老师编辑企业资料与创建申报草稿权限"
+    },
+    {
+      "id": "20260729_03_enterprise_material_menu_order",
+      "file": "enterprise-material-menu-order-p5.sql",
+      "purpose": "企业材料台账目录顺序"
+    },
+    {
+      "id": "20260729_04_enterprise_finance_amount_decimal",
+      "file": "enterprise-finance-amount-decimal-p1.sql",
+      "purpose": "财税金额列改为万元 DECIMAL(20,2) 数值"
+    },
+    {
+      "id": "20260804_01_crm_sync_event_version",
+      "file": "crm-sync-event-version-p1.sql",
+      "purpose": "CRM 同步入口表增加业务键、版本和事件类型"
+    },
+    {
+      "id": "20260804_02_client_property_ip_tech_category",
+      "file": "client-property-ip-tech-category-p1.sql",
+      "purpose": "企业知识产权增加技术领域分类字段"
+    },
+    {
+      "id": "20260805_01_auth_app_scope",
+      "file": "auth-app-scope-p0.sql",
+      "purpose": "统一认证应用、用户应用授权与应用级角色权限菜单范围"
+    },
+    {
+      "id": "20260929_01_enterprise_management_menu",
+      "file": "enterprise-management-menu-p1.sql",
+      "purpose": "企业管理菜单收拢企业列表、材料台账与申报管理"
+    },
+    {
+      "id": "20261001_01_governance_enterprise_distribution",
+      "file": "governance-enterprise-distribution-p1.sql",
+      "purpose": "区域总览统一建档、保存销售负责人及按区域分发企业档案"
+    },
+    {
+      "id": "20261001_02_governance_enterprise_projects",
+      "file": "governance-enterprise-projects-p1.sql",
+      "purpose": "企业建档增加多选企业项目并向企业负责人展示申报项目"
+    },
+    {
+      "id": "20261001_03_governance_direct_enterprise_accounts",
+      "file": "governance-direct-enterprise-accounts-p1.sql",
+      "purpose": "停用区域负责人及中间分发链路，保留现有企业账号、档案和多企业绑定"
+    },
+    {
+      "id": "20261001_04_governance_enterprise_excel",
+      "file": "governance-enterprise-excel-p1.sql",
+      "purpose": "企业建档预申报年份，配合五字段必填和 Excel 导入导出"
+    }
+  ],
+  "manualSeeds": [
+    {
+      "file": "region-init-2025.sql",
+      "purpose": "全国区域基础数据；按业务需要单独执行。"
+    },
+    {
+      "file": "seed-system-data.sql",
+      "purpose": "历史系统演示数据；新环境默认不执行。"
+    }
+  ]
+}
